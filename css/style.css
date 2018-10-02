@@ -29,3 +29,8 @@ body {
   display: table-cell;
   width: 100vw;
   vertical-align: middle; }
+
+.copy {
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing: 1px; }
