@@ -17,13 +17,16 @@
 
 body {
   cursor: default;
-  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
-  color: #333; }
+  color: #333;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
 
 .logo {
   height: 20vh; }
   .logo img {
-    height: 90%; }
+    max-height: 90%;
+    max-width: 100%; }
 
 .row-fluid {
   height: 100vh;
@@ -53,15 +56,14 @@ body {
   font-style: normal; }
 
 .bold {
-  font-family: a-otf-futo-go-b101-pr6n, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal; }
 
 p {
   margin-top: 2em; }
 
 .section {
-  padding: 4em; }
+  padding: 4em 0; }
 
 a {
   color: #ffb600;
@@ -87,3 +89,22 @@ a {
 
 .br {
   display: inline-block; }
+
+@media (max-width: 992px) {
+  .col-xs-12 {
+    margin-top: 2.4em; } }
+.guidelines {
+  border: solid 1px #ffb600;
+  padding: 24px;
+  margin: 3em 0; }
+  .guidelines h5 {
+    font-weight: 800;
+    margin: -1.75em 0 0;
+    color: #ffb600;
+    background-color: #1e1e1e; }
+
+@media (min-width: 992px) {
+  .guidelines {
+    margin: 3em 20%; }
+    .guidelines h5 {
+      margin: -1.75em 20% 0; } }
