@@ -1,60 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coming soon</title>
+<title>Fruor Works</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/lws4xkf.css">
 <script>
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 1000; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
+  (function(d) {
+    var config = {
+      kitId: 'gtr1rmy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
 </script>
 </head>
-<body class="tk-halyard-display">
-<div class="top-back">
+<body>
+<div class="top-back back-gray">
   <div class="container-fluid">
     <div class="row-fluid">
-      <div class="col-md-6 offset-md-3 text-center"> <a href="#top">
-        <div class="logo"><img src="images/mark.svg" alt=""/></div>
-        </a>
-        <p class="text-white copy">Get back Freedom, Make Revolution.</p>
+      <div class="col-md-6 offset-md-3 text-center">
+        <div class="logo"><img src="images/banner.png" alt=""/></div>
+        <p class="copy">Virtual Creative Lounge</p>
       </div>
     </div>
   </div>
 </div>
-<div class="top-back">
-  <div class="container-fluid" id="top">
-    <div class="row-fluid">
-      <div class="col-md-6 offset-md-3 text-center">
-        <button type="button" class="btn btn-outline-primary">Primary</button>
-        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-        <button type="button" class="btn btn-outline-success">Success</button>
+<div class="back-white">
+  <div class="container-fluid">
+    <div class="row section">
+      <div class="col-md-5 offset-md-1 text-center">
+        <h2 class="midashi">ひとりじゃ創れないものがある。</h2>
+        <p>絵を描く人がいます。<br>
+          音楽を作る人がいます。<br>
+          プログラムを組む人がいます。<br>
+          写真を撮る人がいます。<br>
+          文を書く人がいます。</p>
+        <p>もちろんそれらの作品は、単体でも素晴らしいものです。<br>
+          しかしそれらを組み合わせることで、新たな可能性が広がります。</p>
+        <p> 小説本を作りたいけど表紙に使う写真を上手く撮れない。<br>
+          ゲームを作りたいけどキービジュアルを描けない。<br>
+          CDを作って即売会に出したいがジャケットのデザインができない。<br>
+        </p>
+        <p>自分にできないことは、できる人に。</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <h2 class="midashi">“もっと評価されるべき”</h2>
+        <p>音楽のネット公開について考えてみます。<br>
+          ファイル単体での配布と、イラストや映像つきでの公開。<br>
+          音楽自体のクオリティが同じなら、どちらが多くの人に聞いてもらえるでしょうか。<br>
+          そして、評価されやすいでしょうか。</p>
+        <p>創ることは素晴らしいことです。<br>
+          そしてその作品たちは、評価を受けるべきです。<br>
+          良い点を褒めてもらうことでモチベーションが上がるかも知れません。<br>
+          それをきっかけに仕事につながるかも知れません。<br>
+          フィードバックをもらうことで、気づいていなかった作品の未熟な点を知るということもあるかも知れません。</p>
+        <p>すべて、人に見てもらわないと始まらないのです。</p>
       </div>
     </div>
   </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
 <script src="js/jquery-3.2.1.min.js"></script>--> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 

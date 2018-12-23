@@ -12,12 +12,13 @@
   height: 2em; }
 
 .top-back {
-  background-color: #1e1e1e;
   height: 100vh;
   width: 100%; }
 
 body {
-  cursor: default; }
+  cursor: default;
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  color: #333; }
 
 .logo {
   height: 20vh; }
@@ -31,9 +32,33 @@ body {
   vertical-align: middle; }
 
 .copy {
+  margin-top: -2em;
   font-weight: normal;
-  font-size: 2em;
-  letter-spacing: 1px; }
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: #808080;
+  font-family: halyard-micro, sans-serif;
+  font-weight: 100;
+  font-style: normal; }
+
+.back-gray {
+  background-color: #1e1e1e; }
+
+.back-white {
+  background-color: #ffffff; }
+
+.midashi {
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+.bold {
+  font-family: a-otf-futo-go-b101-pr6n, sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+
+p {
+  margin-top: 2em; }
 
 .section {
-  height: 100vh; }
+  padding: 4em; }
