@@ -90,11 +90,11 @@ a {
   &:hover {
     color: $main-color;
     text-decoration: none;
-    &:after {
+  /*  &:after {
       transform: scale(1, 1);
-    }
+    }*/
   }
-  &:after {
+  /*&:after {
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -105,7 +105,7 @@ a {
     transform: scale(0, 1);
     transform-origin: left top;
     transition: transform 0.3s;
-  }
+  }*/
 }
 
 .br {
@@ -123,7 +123,7 @@ a {
 }
 
 .guidelines {
-  border: solid 1px $main-color;
+  border: solid 2px $main-color;
   padding: 24px;
   margin: 3em 0;
   h5 {
@@ -149,6 +149,7 @@ a {
   color: $main-color;
   padding: 1rem;
   &:hover {
-    background-color: rgba(255, 182, 0, 0.2);
+    background-color: $main-color;
+	  color: #ffffff;
   }
 }
