@@ -151,9 +151,11 @@ a {
   border: 2px solid $main-color;
   color: $main-color;
   padding: 1rem;
+	transition: 0.4s;
   &:hover {
     background-color: $main-color;
 	  color: #ffffff;
+	  transition: 0.2s;
   }
 }
 
